@@ -1,0 +1,1011 @@
+s Resistance: 7870.14 Ω
+Temperature: 33.14 °C
+Humidity: 27.46 %
+Gas Resistance: 7930300.00 Ω
+Temperature: 33.14 °C
+Humidity: 27.43 %
+Gas Resistance: 31859990.00 Ω
+Temperature: 27.04 °C
+Humidity: 26.98 %
+Gas Resistance: 1958.86 Ω
+Temperature: 33.14 °C
+Humidity: 27.42 %
+Gas Resistance: 7918801.50 Ω
+Temperature: 33.14 °C
+Humidity: 27.41 %
+Gas Resistance: 31836774.00 Ω
+Temperature: 27.04 °C
+Humidity: 26.95 %
+Gas Resistance: 3929.27 Ω
+Temperature: 33.14 °C
+Humidity: 27.42 %
+Gas Resistance: 1969704.25 Ω
+Temperature: 33.14 °C
+Humidity: 27.38 %
+Gas Resistance: 15895222.00 Ω
+Temperature: 27.03 °C
+Humidity: 26.96 %
+Gas Resistance: 15775.20 Ω
+Temperature: 33.14 °C
+Humidity: 27.42 %
+Gas Resistance: 31883240.00 Ω
+Temperature: 33.14 °C
+Humidity: 27.39 %
+Gas Resistance: 1955.99 Ω
+Temperature: 27.03 °C
+Humidity: 26.96 %
+Gas Resistance: 31667.49 Ω
+Temperature: 33.14 °C
+Humidity: 27.41 %
+Gas Resistance: 63906388.00 Ω
+Temperature: 33.14 °C
+Humidity: 27.36 %
+Gas Resistance: 3923.49 Ω
+Temperature: 27.04 °C
+Humidity: 26.93 %
+Gas Resistance: 63618.29 Ω
+Temperature: 33.14 °C
+Humidity: 27.40 %
+Gas Resistance: 7870.14 Ω
+Temperature: 33.14 °C
+Humidity: 27.36 %
+Gas Resistance: 1958.86 Ω
+Temperature: 27.03 °C
+Humidity: 26.92 %
+Gas Resistance: 31644.01 Ω
+Temperature: 33.14 °C
+Humidity: 27.37 %
+Gas Resistance: 15883665.00 Ω
+Temperature: 33.14 °C
+Humidity: 27.35 %
+Gas Resistance: 63953160.00 Ω
+Temperature: 27.04 °C
+Humidity: 26.91 %
+Gas Resistance: 15798.57 Ω
+Temperature: 33.14 °C
+Humidity: 27.37 %
+Gas Resistance: 31859990.00 Ω
+Temperature: 33.14 °C
+Humidity: 27.33 %
+Gas Resistance: 1958.86 Ω
+Temperature: 27.04 °C
+Humidity: 26.91 %
+Gas Resistance: 15810.28 Ω
+Temperature: 33.14 °C
+Humidity: 27.38 %
+Gas Resistance: 15895222.00 Ω
+Temperature: 33.14 °C
+Humidity: 27.37 %
+Gas Resistance: 1958.86 Ω
+Temperature: 27.04 °C
+Humidity: 26.94 %
+Gas Resistance: 63476.32 Ω
+Temperature: 33.14 °C
+Humidity: 27.41 %
+Gas Resistance: 31906524.00 Ω
+Temperature: 33.14 °C
+Humidity: 27.38 %
+Gas Resistance: 1955.99 Ω
+Temperature: 27.05 °C
+Humidity: 26.95 %
+Gas Resistance: 127617.15 Ω
+Temperature: 33.14 °C
+Humidity: 27.42 %
+Gas Resistance: 64000000.00 Ω
+Temperature: 33.14 °C
+Humidity: 27.38 %
+Gas Resistance: 1958.86 Ω
+Temperature: 27.05 °C
+Humidity: 26.96 %
+Gas Resistance: 127617.15 Ω
+Temperature: 33.14 °C
+Humidity: 27.39 %
+Gas Resistance: 31836774.00 Ω
+Temperature: 33.14 °C
+Humidity: 27.37 %
+Gas Resistance: 7870.14 Ω
+Temperature: 27.05 °C
+Humidity: 26.94 %
+Gas Resistance: 15810.28 Ω
+Temperature: 33.14 °C
+Humidity: 27.37 %
+Gas Resistance: 31836774.00 Ω
+Temperature: 33.14 °C
+Humidity: 27.34 %
+Gas Resistance: 3929.27 Ω
+Temperature: 27.05 °C
+Humidity: 26.92 %
+Gas Resistance: 127331.51 Ω
+Temperature: 33.14 °C
+Humidity: 27.38 %
+Gas Resistance: 31859990.00 Ω
+Temperature: 33.14 °C
+Humidity: 27.34 %
+Gas Resistance: 1954.56 Ω
+Temperature: 27.05 °C
+Humidity: 26.89 %
+Gas Resistance: 15798.57 Ω
+Temperature: 33.14 °C
+Humidity: 27.37 %
+Gas Resistance: 15883665.00 Ω
+Temperature: 33.14 °C
+Humidity: 27.31 %
+Gas Resistance: 3926.38 Ω
+Temperature: 27.05 °C
+Humidity: 26.89 %
+Gas Resistance: 31644.01 Ω
+Temperature: 33.14 °C
+Humidity: 27.37 %
+Gas Resistance: 1958.86 Ω
+Temperature: 33.14 °C
+Humidity: 27.33 %
+Gas Resistance: 15786.88 Ω
+Temperature: 27.05 °C
+Humidity: 26.89 %
+Gas Resistance: 255425.30 Ω
+Temperature: 33.14 °C
+Humidity: 27.38 %
+Gas Resistance: 1955.99 Ω
+Temperature: 33.14 °C
+Humidity: 27.35 %
+Gas Resistance: 7870.14 Ω
+Temperature: 27.05 °C
+Humidity: 26.91 %
+Gas Resistance: 127426.58 Ω
+Temperature: 33.14 °C
+Humidity: 27.37 %
+Gas Resistance: 63953160.00 Ω
+Temperature: 33.14 °C
+Humidity: 27.35 %
+Gas Resistance: 31667.49 Ω
+Temperature: 27.05 °C
+Humidity: 26.91 %
+Gas Resistance: 1030181.06 Ω
+Temperature: 33.14 °C
+Humidity: 27.36 %
+Gas Resistance: 3923.49 Ω
+Temperature: 33.14 °C
+Humidity: 27.33 %
+Gas Resistance: 31691.01 Ω
+Temperature: 27.04 °C
+Humidity: 26.90 %
+Gas Resistance: 127426.58 Ω
+Temperature: 33.14 °C
+Humidity: 27.37 %
+Gas Resistance: 3929.27 Ω
+Temperature: 33.14 °C
+Humidity: 27.34 %
+Gas Resistance: 7870.14 Ω
+Temperature: 27.04 °C
+Humidity: 26.92 %
+Gas Resistance: 513540.63 Ω
+Temperature: 33.14 °C
+Humidity: 27.36 %
+Gas Resistance: 3929.27 Ω
+Temperature: 33.14 °C
+Humidity: 27.32 %
+Gas Resistance: 63523.57 Ω
+Temperature: 27.04 °C
+Humidity: 26.89 %
+Gas Resistance: 1028628.81 Ω
+Temperature: 33.14 °C
+Humidity: 27.35 %
+Gas Resistance: 15775.20 Ω
+Temperature: 33.14 °C
+Humidity: 27.31 %
+Gas Resistance: 31714.57 Ω
+Temperature: 27.05 °C
+Humidity: 26.90 %
+Gas Resistance: 4136329.25 Ω
+Temperature: 33.14 °C
+Humidity: 27.37 %
+Gas Resistance: 15786.88 Ω
+Temperature: 33.14 °C
+Humidity: 27.33 %
+Gas Resistance: 256000.00 Ω
+Temperature: 27.05 °C
+Humidity: 26.91 %
+Gas Resistance: 1028628.81 Ω
+Temperature: 33.14 °C
+Humidity: 27.36 %
+Gas Resistance: 127331.51 Ω
+Temperature: 33.14 °C
+Humidity: 27.33 %
+Gas Resistance: 256000.00 Ω
+Temperature: 27.05 °C
+Humidity: 26.89 %
+Gas Resistance: 4145749.00 Ω
+Temperature: 33.14 °C
+Humidity: 27.35 %
+Gas Resistance: 31667.49 Ω
+Temperature: 33.14 °C
+Humidity: 27.33 %
+Gas Resistance: 1028628.81 Ω
+Temperature: 27.05 °C
+Humidity: 26.89 %
+Gas Resistance: 4139464.50 Ω
+Temperature: 33.14 °C
+Humidity: 27.35 %
+Gas Resistance: 63523.57 Ω
+Temperature: 33.14 °C
+Humidity: 27.32 %
+Gas Resistance: 127426.58 Ω
+Temperature: 27.06 °C
+Humidity: 26.89 %
+Gas Resistance: 4142604.25 Ω
+Temperature: 33.14 °C
+Humidity: 27.35 %
+Gas Resistance: 63570.89 Ω
+Temperature: 33.14 °C
+Humidity: 27.31 %
+Gas Resistance: 127617.15 Ω
+Temperature: 27.06 °C
+Humidity: 26.86 %
+Gas Resistance: 1028628.81 Ω
+Temperature: 33.14 °C
+Humidity: 27.34 %
+Gas Resistance: 63523.57 Ω
+Temperature: 33.14 °C
+Humidity: 27.31 %
+Gas Resistance: 127426.58 Ω
+Temperature: 27.07 °C
+Humidity: 26.87 %
+Gas Resistance: 1030181.06 Ω
+Temperature: 33.14 °C
+Humidity: 27.34 %
+Gas Resistance: 63523.57 Ω
+Temperature: 33.14 °C
+Humidity: 27.31 %
+Gas Resistance: 127426.58 Ω
+Temperature: 27.08 °C
+Humidity: 26.89 %
+Gas Resistance: 4145749.00 Ω
+Temperature: 33.14 °C
+Humidity: 27.33 %
+Gas Resistance: 15810.28 Ω
+Temperature: 33.14 °C
+Humidity: 27.29 %
+Gas Resistance: 512769.16 Ω
+Temperature: 27.08 °C
+Humidity: 26.88 %
+Gas Resistance: 8304105.50 Ω
+Temperature: 33.14 °C
+Humidity: 27.32 %
+Gas Resistance: 63523.57 Ω
+Temperature: 33.14 °C
+Humidity: 27.31 %
+Gas Resistance: 513540.63 Ω
+Temperature: 27.08 °C
+Humidity: 26.85 %
+Gas Resistance: 4139464.50 Ω
+Temperature: 33.14 °C
+Humidity: 27.32 %
+Gas Resistance: 127426.58 Ω
+Temperature: 33.14 °C
+Humidity: 27.27 %
+Gas Resistance: 1029404.38 Ω
+Temperature: 27.08 °C
+Humidity: 26.85 %
+Gas Resistance: 2063476.12 Ω
+Temperature: 33.14 °C
+Humidity: 27.27 %
+Gas Resistance: 127521.80 Ω
+Temperature: 33.14 °C
+Humidity: 27.25 %
+Gas Resistance: 513540.63 Ω
+Temperature: 27.09 °C
+Humidity: 26.82 %
+Gas Resistance: 33470888.00 Ω
+Temperature: 33.14 °C
+Humidity: 27.27 %
+Gas Resistance: 63523.57 Ω
+Temperature: 33.14 °C
+Humidity: 27.23 %
+Gas Resistance: 513154.59 Ω
+Temperature: 27.09 °C
+Humidity: 26.80 %
+Gas Resistance: 4139464.50 Ω
+Temperature: 33.14 °C
+Humidity: 27.28 %
+Gas Resistance: 7881.77 Ω
+Temperature: 33.14 °C
+Humidity: 27.24 %
+Gas Resistance: 255808.14 Ω
+Temperature: 27.10 °C
+Humidity: 26.82 %
+Gas Resistance: 4145749.00 Ω
+Temperature: 33.14 °C
+Humidity: 27.28 %
+Gas Resistance: 63523.57 Ω
+Temperature: 33.14 °C
+Humidity: 27.19 %
+Gas Resistance: 127617.15 Ω
+Temperature: 27.10 °C
+Humidity: 26.79 %
+Gas Resistance: 2066599.37 Ω
+Temperature: 33.14 °C
+Humidity: 27.24 %
+Gas Resistance: 31644.01 Ω
+Temperature: 33.14 °C
+Humidity: 27.23 %
+Gas Resistance: 255425.30 Ω
+Temperature: 27.10 °C
+Humidity: 26.80 %
+Gas Resistance: 4142604.25 Ω
+Temperature: 33.14 °C
+Humidity: 27.24 %
+Gas Resistance: 15810.28 Ω
+Temperature: 33.14 °C
+Humidity: 27.24 %
+Gas Resistance: 255425.30 Ω
+Temperature: 27.10 °C
+Humidity: 26.82 %
+Gas Resistance: 1030181.06 Ω
+Temperature: 33.14 °C
+Humidity: 27.26 %
+Gas Resistance: 512769.16 Ω
+Temperature: 33.14 °C
+Humidity: 27.23 %
+Gas Resistance: 63523.57 Ω
+Temperature: 27.11 °C
+Humidity: 26.81 %
+Gas Resistance: 2063476.12 Ω
+Temperature: 33.14 °C
+Humidity: 27.27 %
+Gas Resistance: 7881.77 Ω
+Temperature: 33.14 °C
+Humidity: 27.22 %
+Gas Resistance: 256000.00 Ω
+Temperature: 27.10 °C
+Humidity: 26.81 %
+Gas Resistance: 2066599.37 Ω
+Temperature: 33.14 °C
+Humidity: 27.24 %
+Gas Resistance: 31714.57 Ω
+Temperature: 33.14 °C
+Humidity: 27.22 %
+Gas Resistance: 127617.15 Ω
+Temperature: 27.11 °C
+Humidity: 26.80 %
+Gas Resistance: 513540.63 Ω
+Temperature: 33.14 °C
+Humidity: 27.24 %
+Gas Resistance: 31714.57 Ω
+Temperature: 33.14 °C
+Humidity: 27.19 %
+Gas Resistance: 63570.89 Ω
+Temperature: 27.10 °C
+Humidity: 26.78 %
+Gas Resistance: 2061918.00 Ω
+Temperature: 33.14 °C
+Humidity: 27.26 %
+Gas Resistance: 63618.29 Ω
+Temperature: 33.14 °C
+Humidity: 27.23 %
+Gas Resistance: 255616.58 Ω
+Temperature: 27.10 °C
+Humidity: 26.80 %
+Gas Resistance: 4136329.25 Ω
+Temperature: 33.14 °C
+Humidity: 27.28 %
+Gas Resistance: 31714.57 Ω
+Temperature: 33.14 °C
+Humidity: 27.24 %
+Gas Resistance: 255616.58 Ω
+Temperature: 27.11 °C
+Humidity: 26.82 %
+Gas Resistance: 4136329.25 Ω
+Temperature: 33.14 °C
+Humidity: 27.28 %
+Gas Resistance: 63570.89 Ω
+Temperature: 33.14 °C
+Humidity: 27.27 %
+Gas Resistance: 255808.14 Ω
+Temperature: 27.10 °C
+Humidity: 26.83 %
+Gas Resistance: 8297797.00 Ω
+Temperature: 33.14 °C
+Humidity: 27.26 %
+Gas Resistance: 127426.58 Ω
+Temperature: 33.14 °C
+Humidity: 27.24 %
+Gas Resistance: 256000.00 Ω
+Temperature: 27.09 °C
+Humidity: 26.82 %
+Gas Resistance: 16684318.00 Ω
+Temperature: 33.14 °C
+Humidity: 27.26 %
+Gas Resistance: 1027854.44 Ω
+Temperature: 33.14 °C
+Humidity: 27.22 %
+Gas Resistance: 2066599.37 Ω
+Temperature: 27.09 °C
+Humidity: 26.80 %
+Gas Resistance: 2065036.50 Ω
+Temperature: 33.14 °C
+Humidity: 27.27 %
+Gas Resistance: 255616.58 Ω
+Temperature: 33.14 °C
+Humidity: 27.24 %
+Gas Resistance: 513540.63 Ω
+Temperature: 27.09 °C
+Humidity: 26.83 %
+Gas Resistance: 33394140.00 Ω
+Temperature: 33.14 °C
+Humidity: 27.31 %
+Gas Resistance: 63570.89 Ω
+Temperature: 33.14 °C
+Humidity: 27.25 %
+Gas Resistance: 2066599.37 Ω
+Temperature: 27.08 °C
+Humidity: 26.83 %
+Gas Resistance: 67044500.00 Ω
+Temperature: 33.14 °C
+Humidity: 27.28 %
+Gas Resistance: 513540.63 Ω
+Temperature: 33.14 °C
+Humidity: 27.25 %
+Gas Resistance: 4139464.50 Ω
+Temperature: 27.08 °C
+Humidity: 26.83 %
+Gas Resistance: 33394140.00 Ω
+Temperature: 33.14 °C
+Humidity: 27.27 %
+Gas Resistance: 1028628.81 Ω
+Temperature: 33.14 °C
+Humidity: 27.23 %
+Gas Resistance: 8297797.00 Ω
+Temperature: 27.08 °C
+Humidity: 26.81 %
+Gas Resistance: 8316751.50 Ω
+Temperature: 33.14 °C
+Humidity: 27.26 %
+Gas Resistance: 255808.14 Ω
+Temperature: 33.14 °C
+Humidity: 27.20 %
+Gas Resistance: 2061918.00 Ω
+Temperature: 27.08 °C
+Humidity: 26.76 %
+Gas Resistance: 2066599.37 Ω
+Temperature: 33.14 °C
+Humidity: 27.23 %
+Gas Resistance: 127617.15 Ω
+Temperature: 33.14 °C
+Humidity: 27.22 %
+Gas Resistance: 513540.63 Ω
+Temperature: 27.08 °C
+Humidity: 26.77 %
+Gas Resistance: 4139464.50 Ω
+Temperature: 33.14 °C
+Humidity: 27.28 %
+Gas Resistance: 127521.80 Ω
+Temperature: 33.14 °C
+Humidity: 27.24 %
+Gas Resistance: 512384.28 Ω
+Temperature: 27.07 °C
+Humidity: 26.82 %
+Gas Resistance: 16646177.00 Ω
+Temperature: 33.14 °C
+Humidity: 27.28 %
+Gas Resistance: 4136329.25 Ω
+Temperature: 33.14 °C
+Humidity: 27.27 %
+Gas Resistance: 2066599.37 Ω
+Temperature: 27.07 °C
+Humidity: 26.82 %
+Gas Resistance: 33394140.00 Ω
+Temperature: 33.14 °C
+Humidity: 27.29 %
+Gas Resistance: 513154.59 Ω
+Temperature: 33.14 °C
+Humidity: 27.27 %
+Gas Resistance: 2063476.12 Ω
+Temperature: 27.07 °C
+Humidity: 26.83 %
+Gas Resistance: 2050.76 Ω
+Temperature: 33.14 °C
+Humidity: 27.27 %
+Gas Resistance: 513540.63 Ω
+Temperature: 33.14 °C
+Humidity: 27.24 %
+Gas Resistance: 1028628.81 Ω
+Temperature: 27.07 °C
+Humidity: 26.83 %
+Gas Resistance: 67044500.00 Ω
+Temperature: 33.14 °C
+Humidity: 27.27 %
+Gas Resistance: 256000.00 Ω
+Temperature: 33.14 °C
+Humidity: 27.24 %
+Gas Resistance: 2063476.12 Ω
+Temperature: 27.06 °C
+Humidity: 26.83 %
+Gas Resistance: 4120.53 Ω
+Temperature: 33.14 °C
+Humidity: 27.28 %
+Gas Resistance: 2063476.12 Ω
+Temperature: 33.14 °C
+Humidity: 27.25 %
+Gas Resistance: 8304105.50 Ω
+Temperature: 27.06 °C
+Humidity: 26.84 %
+Gas Resistance: 2053.92 Ω
+Temperature: 33.14 °C
+Humidity: 27.30 %
+Gas Resistance: 1030181.06 Ω
+Temperature: 33.14 °C
+Humidity: 27.26 %
+Gas Resistance: 8316751.50 Ω
+Temperature: 27.06 °C
+Humidity: 26.84 %
+Gas Resistance: 4114.17 Ω
+Temperature: 33.14 °C
+Humidity: 27.28 %
+Gas Resistance: 2063476.12 Ω
+Temperature: 33.14 °C
+Humidity: 27.26 %
+Gas Resistance: 8304105.50 Ω
+Temperature: 27.06 °C
+Humidity: 26.82 %
+Gas Resistance: 8260.20 Ω
+Temperature: 33.14 °C
+Humidity: 27.28 %
+Gas Resistance: 2066599.37 Ω
+Temperature: 33.14 °C
+Humidity: 27.27 %
+Gas Resistance: 16658871.00 Ω
+Temperature: 27.06 °C
+Humidity: 26.84 %
+Gas Resistance: 2052.33 Ω
+Temperature: 33.14 °C
+Humidity: 27.31 %
+Gas Resistance: 2066599.37 Ω
+Temperature: 33.14 °C
+Humidity: 27.28 %
+Gas Resistance: 8316751.50 Ω
+Temperature: 27.06 °C
+Humidity: 26.84 %
+Gas Resistance: 67147544.00 Ω
+Temperature: 33.14 °C
+Humidity: 27.31 %
+Gas Resistance: 1029404.38 Ω
+Temperature: 33.14 °C
+Humidity: 27.28 %
+Gas Resistance: 33470888.00 Ω
+Temperature: 27.06 °C
+Humidity: 26.84 %
+Gas Resistance: 67147544.00 Ω
+Temperature: 33.14 °C
+Humidity: 27.28 %
+Gas Resistance: 4145749.00 Ω
+Temperature: 33.14 °C
+Humidity: 27.26 %
+Gas Resistance: 8304105.50 Ω
+Temperature: 27.06 °C
+Humidity: 26.84 %
+Gas Resistance: 2055.50 Ω
+Temperature: 33.14 °C
+Humidity: 27.27 %
+Gas Resistance: 4139464.50 Ω
+Temperature: 33.14 °C
+Humidity: 27.24 %
+Gas Resistance: 8304105.50 Ω
+Temperature: 27.06 °C
+Humidity: 26.81 %
+Gas Resistance: 33470888.00 Ω
+Temperature: 33.14 °C
+Humidity: 27.27 %
+Gas Resistance: 1029404.38 Ω
+Temperature: 33.14 °C
+Humidity: 27.24 %
+Gas Resistance: 33419684.00 Ω
+Temperature: 27.06 °C
+Humidity: 26.81 %
+Gas Resistance: 16684318.00 Ω
+Temperature: 33.14 °C
+Humidity: 27.27 %
+Gas Resistance: 2063476.12 Ω
+Temperature: 33.14 °C
+Humidity: 27.24 %
+Gas Resistance: 4139464.50 Ω
+Temperature: 27.06 °C
+Humidity: 26.83 %
+Gas Resistance: 67044500.00 Ω
+Temperature: 33.14 °C
+Humidity: 27.29 %
+Gas Resistance: 513154.59 Ω
+Temperature: 33.14 °C
+Humidity: 27.25 %
+Gas Resistance: 16684318.00 Ω
+Temperature: 27.06 °C
+Humidity: 26.83 %
+Gas Resistance: 66993100.00 Ω
+Temperature: 33.14 °C
+Humidity: 27.29 %
+Gas Resistance: 2063476.12 Ω
+Temperature: 33.14 °C
+Humidity: 27.27 %
+Gas Resistance: 8297797.00 Ω
+Temperature: 27.06 °C
+Humidity: 26.83 %
+Gas Resistance: 4117.34 Ω
+Temperature: 33.14 °C
+Humidity: 27.27 %
+Gas Resistance: 4145749.00 Ω
+Temperature: 33.14 °C
+Humidity: 27.25 %
+Gas Resistance: 33419684.00 Ω
+Temperature: 27.07 °C
+Humidity: 26.79 %
+Gas Resistance: 2055.50 Ω
+Temperature: 33.14 °C
+Humidity: 27.26 %
+Gas Resistance: 2066599.37 Ω
+Temperature: 33.14 °C
+Humidity: 27.24 %
+Gas Resistance: 33419684.00 Ω
+Temperature: 27.06 °C
+Humidity: 26.81 %
+Gas Resistance: 2055.50 Ω
+Temperature: 33.14 °C
+Humidity: 27.26 %
+Gas Resistance: 8297797.00 Ω
+Temperature: 33.14 °C
+Humidity: 27.23 %
+Gas Resistance: 8316751.50 Ω
+Temperature: 27.06 °C
+Humidity: 26.78 %
+Gas Resistance: 67147544.00 Ω
+Temperature: 33.14 °C
+Humidity: 27.24 %
+Gas Resistance: 16671585.00 Ω
+Temperature: 33.14 °C
+Humidity: 27.21 %
+Gas Resistance: 8316751.50 Ω
+Temperature: 27.06 °C
+Humidity: 26.78 %
+Gas Resistance: 16597.51 Ω
+Temperature: 33.14 °C
+Humidity: 27.23 %
+Gas Resistance: 8304105.50 Ω
+Temperature: 33.14 °C
+Humidity: 27.19 %
+Gas Resistance: 16671585.00 Ω
+Temperature: 27.06 °C
+Humidity: 26.78 %
+Gas Resistance: 4117.34 Ω
+Temperature: 33.14 °C
+Humidity: 27.24 %
+Gas Resistance: 4145749.00 Ω
+Temperature: 33.14 °C
+Humidity: 27.19 %
+Gas Resistance: 8316751.50 Ω
+Temperature: 27.06 °C
+Humidity: 26.78 %
+Gas Resistance: 2055.50 Ω
+Temperature: 33.14 °C
+Humidity: 27.26 %
+Gas Resistance: 4139464.50 Ω
+Temperature: 33.14 °C
+Humidity: 27.23 %
+Gas Resistance: 16684318.00 Ω
+Temperature: 27.06 °C
+Humidity: 26.79 %
+Gas Resistance: 4120.53 Ω
+Temperature: 33.14 °C
+Humidity: 27.26 %
+Gas Resistance: 2066599.37 Ω
+Temperature: 33.14 °C
+Humidity: 27.23 %
+Gas Resistance: 33419684.00 Ω
+Temperature: 27.05 °C
+Humidity: 26.80 %
+Gas Resistance: 8260.20 Ω
+Temperature: 33.14 °C
+Humidity: 27.25 %
+Gas Resistance: 16658871.00 Ω
+Temperature: 33.14 °C
+Humidity: 27.21 %
+Gas Resistance: 33394140.00 Ω
+Temperature: 27.05 °C
+Humidity: 26.78 %
+Gas Resistance: 4114.17 Ω
+Temperature: 33.14 °C
+Humidity: 27.24 %
+Gas Resistance: 67095980.00 Ω
+Temperature: 33.14 °C
+Humidity: 27.19 %
+Gas Resistance: 67147544.00 Ω
+Temperature: 27.05 °C
+Humidity: 26.77 %
+Gas Resistance: 33298.65 Ω
+Temperature: 33.14 °C
+Humidity: 27.22 %
+Gas Resistance: 16684318.00 Ω
+Temperature: 33.14 °C
+Humidity: 27.19 %
+Gas Resistance: 67147544.00 Ω
+Temperature: 27.05 °C
+Humidity: 26.76 %
+Gas Resistance: 8253.80 Ω
+Temperature: 33.14 °C
+Humidity: 27.25 %
+Gas Resistance: 8304105.50 Ω
+Temperature: 33.14 °C
+Humidity: 27.23 %
+Gas Resistance: 2050.76 Ω
+Temperature: 27.05 °C
+Humidity: 26.81 %
+Gas Resistance: 16571.72 Ω
+Temperature: 33.14 °C
+Humidity: 27.26 %
+Gas Resistance: 2055.50 Ω
+Temperature: 33.14 °C
+Humidity: 27.22 %
+Gas Resistance: 4117.34 Ω
+Temperature: 27.04 °C
+Humidity: 26.81 %
+Gas Resistance: 16597.51 Ω
+Temperature: 33.14 °C
+Humidity: 27.23 %
+Gas Resistance: 33419684.00 Ω
+Temperature: 33.14 °C
+Humidity: 27.18 %
+Gas Resistance: 2055.50 Ω
+Temperature: 27.05 °C
+Humidity: 26.76 %
+Gas Resistance: 66649.31 Ω
+Temperature: 33.14 °C
+Humidity: 27.22 %
+Gas Resistance: 67044500.00 Ω
+Temperature: 33.14 °C
+Humidity: 27.21 %
+Gas Resistance: 2053.92 Ω
+Temperature: 27.05 °C
+Humidity: 26.76 %
+Gas Resistance: 8273.01 Ω
+Temperature: 33.14 °C
+Humidity: 27.22 %
+Gas Resistance: 8304105.50 Ω
+Temperature: 33.14 °C
+Humidity: 27.19 %
+Gas Resistance: 67095980.00 Ω
+Temperature: 27.05 °C
+Humidity: 26.76 %
+Gas Resistance: 16571.72 Ω
+Temperature: 33.14 °C
+Humidity: 27.23 %
+Gas Resistance: 16646177.00 Ω
+Temperature: 33.14 °C
+Humidity: 27.19 %
+Gas Resistance: 67147544.00 Ω
+Temperature: 27.05 °C
+Humidity: 26.77 %
+Gas Resistance: 16558.86 Ω
+Temperature: 33.14 °C
+Humidity: 27.22 %
+Gas Resistance: 33470888.00 Ω
+Temperature: 33.14 °C
+Humidity: 27.20 %
+Gas Resistance: 4123.71 Ω
+Temperature: 27.05 °C
+Humidity: 26.76 %
+Gas Resistance: 16558.86 Ω
+Temperature: 33.14 °C
+Humidity: 27.21 %
+Gas Resistance: 16684318.00 Ω
+Temperature: 33.14 °C
+Humidity: 27.18 %
+Gas Resistance: 2052.33 Ω
+Temperature: 27.05 °C
+Humidity: 26.75 %
+Gas Resistance: 16558.86 Ω
+Temperature: 33.14 °C
+Humidity: 27.19 %
+Gas Resistance: 16646177.00 Ω
+Temperature: 33.14 °C
+Humidity: 27.15 %
+Gas Resistance: 16684318.00 Ω
+Temperature: 27.04 °C
+Humidity: 26.76 %
+Gas Resistance: 8273.01 Ω
+Temperature: 33.14 °C
+Humidity: 27.23 %
+Gas Resistance: 16646177.00 Ω
+Temperature: 33.14 °C
+Humidity: 27.17 %
+Gas Resistance: 33470888.00 Ω
+Temperature: 27.05 °C
+Humidity: 26.76 %
+Gas Resistance: 16597.51 Ω
+Temperature: 33.14 °C
+Humidity: 27.23 %
+Gas Resistance: 4139464.50 Ω
+Temperature: 33.14 °C
+Humidity: 27.22 %
+Gas Resistance: 66993100.00 Ω
+Temperature: 27.04 °C
+Humidity: 26.79 %
+Gas Resistance: 16571.72 Ω
+Temperature: 33.14 °C
+Humidity: 27.25 %
+Gas Resistance: 8316751.50 Ω
+Temperature: 33.14 °C
+Humidity: 27.19 %
+Gas Resistance: 66993100.00 Ω
+Temperature: 27.04 °C
+Humidity: 26.77 %
+Gas Resistance: 16558.86 Ω
+Temperature: 33.14 °C
+Humidity: 27.23 %
+Gas Resistance: 8316751.50 Ω
+Temperature: 33.14 °C
+Humidity: 27.22 %
+Gas Resistance: 33394140.00 Ω
+Temperature: 27.03 °C
+Humidity: 26.78 %
+Gas Resistance: 33272.68 Ω
+Temperature: 33.14 °C
+Humidity: 27.25 %
+Gas Resistance: 4145749.00 Ω
+Temperature: 33.14 °C
+Humidity: 27.24 %
+Gas Resistance: 16671585.00 Ω
+Temperature: 27.03 °C
+Humidity: 26.80 %
+Gas Resistance: 33246.75 Ω
+Temperature: 33.14 °C
+Humidity: 27.24 %
+Gas Resistance: 33470888.00 Ω
+Temperature: 33.14 °C
+Humidity: 27.22 %
+Gas Resistance: 67095980.00 Ω
+Temperature: 27.03 °C
+Humidity: 26.79 %
+Gas Resistance: 33246.75 Ω
+Temperature: 33.14 °C
+Humidity: 27.26 %
+Gas Resistance: 67147544.00 Ω
+Temperature: 33.14 °C
+Humidity: 27.23 %
+Gas Resistance: 4117.34 Ω
+Temperature: 27.03 °C
+Humidity: 26.81 %
+Gas Resistance: 66701.41 Ω
+Temperature: 33.14 °C
+Humidity: 27.28 %
+Gas Resistance: 33470888.00 Ω
+Temperature: 33.14 °C
+Humidity: 27.23 %
+Gas Resistance: 2053.92 Ω
+Temperature: 27.02 °C
+Humidity: 26.81 %
+Gas Resistance: 66701.41 Ω
+Temperature: 33.14 °C
+Humidity: 27.28 %
+Gas Resistance: 2052.33 Ω
+Temperature: 33.14 °C
+Humidity: 27.24 %
+Gas Resistance: 2053.92 Ω
+Temperature: 27.02 °C
+Humidity: 26.83 %
+Gas Resistance: 66701.41 Ω
+Temperature: 33.14 °C
+Humidity: 27.27 %
+Gas Resistance: 33419684.00 Ω
+Temperature: 33.14 °C
+Humidity: 27.26 %
+Gas Resistance: 4123.71 Ω
+Temperature: 27.01 °C
+Humidity: 26.83 %
+Gas Resistance: 8260.20 Ω
+Temperature: 33.14 °C
+Humidity: 27.27 %
+Gas Resistance: 67044500.00 Ω
+Temperature: 33.14 °C
+Humidity: 27.25 %
+Gas Resistance: 4123.71 Ω
+Temperature: 27.02 °C
+Humidity: 26.81 %
+Gas Resistance: 33298.65 Ω
+Temperature: 33.14 °C
+Humidity: 27.26 %
+Gas Resistance: 4123.71 Ω
+Temperature: 33.14 °C
+Humidity: 27.23 %
+Gas Resistance: 16597.51 Ω
+Temperature: 27.02 °C
+Humidity: 26.77 %
+Gas Resistance: 268273.50 Ω
+Temperature: 33.14 °C
+Humidity: 27.23 %
+Gas Resistance: 2052.33 Ω
+Temperature: 33.14 °C
+Humidity: 27.19 %
+Gas Resistance: 33298.65 Ω
+Temperature: 27.01 °C
+Humidity: 26.76 %
+Gas Resistance: 538663.88 Ω
+Temperature: 33.14 °C
+Humidity: 27.23 %
+Gas Resistance: 4120.53 Ω
+Temperature: 33.14 °C
+Humidity: 27.21 %
+Gas Resistance: 33272.68 Ω
+Temperature: 27.02 °C
+Humidity: 26.77 %
+Gas Resistance: 268484.53 Ω
+Temperature: 33.14 °C
+Humidity: 27.22 %
+Gas Resistance: 2050.76 Ω
+Temperature: 33.14 °C
+Humidity: 27.20 %
+Gas Resistance: 33246.75 Ω
+Temperature: 27.02 °C
+Humidity: 26.75 %
+Gas Resistance: 268484.53 Ω
+Temperature: 33.14 °C
+Humidity: 27.24 %
+Gas Resistance: 8266.60 Ω
+Temperature: 33.14 °C
+Humidity: 27.21 %
+Gas Resistance: 16597.51 Ω
+Temperature: 27.02 °C
+Humidity: 26.79 %
+Gas Resistance: 133926.23 Ω
+Temperature: 33.14 °C
+Humidity: 27.26 %
+Gas Resistance: 4123.71 Ω
+Temperature: 33.14 °C
+Humidity: 27.22 %
+Gas Resistance: 8273.01 Ω
+Temperature: 27.02 °C
+Humidity: 26.82 %
+Gas Resistance: 133821.22 Ω
+Temperature: 33.14 °C
+Humidity: 27.27 %
+Gas Resistance: 2052.33 Ω
+Temperature: 33.14 °C
+Humidity: 27.23 %
+Gas Resistance: 8253.80 Ω
+Temperature: 27.02 °C
+Humidity: 26.81 %
+Gas Resistance: 66805.84 Ω
+Temperature: 33.14 °C
+Humidity: 27.26 %
+Gas Resistance: 2052.33 Ω
+Temperature: 33.14 °C
+Humidity: 27.22 %
+Gas Resistance: 8260.20 Ω
+Temperature: 27.02 °C
+Humidity: 26.81 %
+Gas Resistance: 66753.59 Ω
+Temperature: 33.14 °C
+Humidity: 27.26 %
+Gas Resistance: 67095980.00 Ω
+Temperature: 33.14 °C
+Humidity: 27.24 %
+Gas Resistance: 16597.51 Ω
+Temperature: 27.01 °C
+Humidity: 26.83 %
+Gas Resistance: 66753.59 Ω
+Temperature: 33.14 °C
+Humidity: 27.27 %
+Gas Resistance: 67147544.00 Ω
+Temperature: 33.14 °C
+Humidity: 27.24 %
+Gas Resistance: 4120.53 Ω
+Temperature: 27.01 °C
+Humidity: 26.82 %
+Gas Resistance: 33246.75 Ω
+Temperature: 33.14 °C
+Humidity: 27.27 %
+Gas Resistance: 4117.34 Ω
+Temperature: 33.14 °C
+Humidity: 27.23 %
+Gas Resistance: 16597.51 Ω
+Temperature: 27.01 °C
+Humidity: 26.78 %
+Gas Resistance: 538239.19 Ω
+Temperature: 33.14 °C
+Humidity: 27.26 %
