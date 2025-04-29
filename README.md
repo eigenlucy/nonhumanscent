@@ -1,5 +1,6 @@
 # nonhumanscent (prerelease)
 
+![A picture of the PCB](http://eigenlucy.github.io/assets/img/Gallery/nonhumanscent.png)
 MOX Array for ML-assisted Chemical Identification
 
 Supports Bosch BSEC + AI-Studio
