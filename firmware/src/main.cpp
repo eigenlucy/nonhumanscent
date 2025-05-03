@@ -3,6 +3,14 @@
 #include "SPIFFS.h"
 #include "ArduinoJson.h"
 #include <vector>
+#include <WiFi.h>
+#include <AsyncTCP.h>
+#include <ESPAsyncWebServer.h>
+
+static AsyncWebServer server(80);
+// Create a global JSON document for sensor data
+DynamicJsonDocument sensorDataDoc(512);
+DynamicJsonDocument configDoc(4096); // For configuration parsing
 
 BME688 sensor;
 
@@ -163,11 +171,11 @@ bool loadSensorConfig() {
     return false;
   }
 
-  // Allocate a JsonDocument
-  DynamicJsonDocument doc(4096); // Adjust size based on your JSON file size
+  // Clear and use the global configDoc
+  configDoc.clear();
 
   // Deserialize the JSON document
-  DeserializationError error = deserializeJson(doc, configFile);
+  DeserializationError error = deserializeJson(configDoc, configFile);
   configFile.close();
 
   if (error) {
@@ -180,7 +188,7 @@ bool loadSensorConfig() {
   Serial.println("Applying sensor configuration...");
   
   // Extract board configuration
-  JsonObject configHeader = doc["configHeader"];
+  JsonObject configHeader = configDoc["configHeader"];
   String boardType = configHeader["boardType"].as<String>();
   String boardMode = configHeader["boardMode"].as<String>();
   
@@ -191,9 +199,9 @@ bool loadSensorConfig() {
   
   // Extract heater profiles
   HeaterProfile heaterProfile;
-  if (doc["configBody"]["heaterProfiles"][0]["id"]) {
-    heaterProfile.id = doc["configBody"]["heaterProfiles"][0]["id"].as<String>();
-    heaterProfile.timeBase = doc["configBody"]["heaterProfiles"][0]["timeBase"].as<int>();
+  if (configDoc["configBody"]["heaterProfiles"][0]["id"]) {
+    heaterProfile.id = configDoc["configBody"]["heaterProfiles"][0]["id"].as<String>();
+    heaterProfile.timeBase = configDoc["configBody"]["heaterProfiles"][0]["timeBase"].as<int>();
     
     Serial.print("Heater Profile: ");
     Serial.println(heaterProfile.id);
@@ -201,7 +209,7 @@ bool loadSensorConfig() {
     Serial.println(heaterProfile.timeBase);
     
     // Extract temperature-time vectors
-    JsonArray tempTimeVectors = doc["configBody"]["heaterProfiles"][0]["temperatureTimeVectors"];
+    JsonArray tempTimeVectors = configDoc["configBody"]["heaterProfiles"][0]["temperatureTimeVectors"];
     for (JsonArray vector : tempTimeVectors) {
       TempTimeVector ttv;
       ttv.temperature = vector[0].as<int>();
@@ -213,21 +221,14 @@ bool loadSensorConfig() {
       Serial.print(", Duration: ");
       Serial.println(ttv.duration);
     }
-    
-    // Apply heater profile settings to the sensor
-    // Note: The BME688 library doesn't have direct methods for setting these profiles
-    // We'll need to adapt based on the available methods
-    
-    // Example of how we might configure the sensor if methods were available:
-    // sensor.configureHeaterProfile(heaterProfile.id, heaterProfile.timeBase, heaterProfile.vectors);
   }
 
   // Extract duty cycle profile
   DutyCycleProfile dutyCycle;
-  if (doc["configBody"]["dutyCycleProfiles"][0]["id"]) {
-    dutyCycle.id = doc["configBody"]["dutyCycleProfiles"][0]["id"].as<String>();
-    dutyCycle.numberScanningCycles = doc["configBody"]["dutyCycleProfiles"][0]["numberScanningCycles"].as<int>();
-    dutyCycle.numberSleepingCycles = doc["configBody"]["dutyCycleProfiles"][0]["numberSleepingCycles"].as<int>();
+  if (configDoc["configBody"]["dutyCycleProfiles"][0]["id"]) {
+    dutyCycle.id = configDoc["configBody"]["dutyCycleProfiles"][0]["id"].as<String>();
+    dutyCycle.numberScanningCycles = configDoc["configBody"]["dutyCycleProfiles"][0]["numberScanningCycles"].as<int>();
+    dutyCycle.numberSleepingCycles = configDoc["configBody"]["dutyCycleProfiles"][0]["numberSleepingCycles"].as<int>();
     
     Serial.print("Duty Cycle Profile: ");
     Serial.println(dutyCycle.id);
@@ -235,14 +236,10 @@ bool loadSensorConfig() {
     Serial.println(dutyCycle.numberScanningCycles);
     Serial.print("Sleeping Cycles: ");
     Serial.println(dutyCycle.numberSleepingCycles);
-    
-    // Apply duty cycle settings to the sensor
-    // Example of how we might configure the sensor if methods were available:
-    // sensor.configureDutyCycle(dutyCycle.numberScanningCycles, dutyCycle.numberSleepingCycles);
   }
   
   // Extract sensor configurations
-  for (JsonObject sensorConfig : doc["configBody"]["sensorConfigurations"].as<JsonArray>()) {
+  for (JsonObject sensorConfig : configDoc["configBody"]["sensorConfigurations"].as<JsonArray>()) {
     int sensorIndex = sensorConfig["sensorIndex"].as<int>();
     String heaterProfileId = sensorConfig["heaterProfile"].as<String>();
     String dutyCycleProfileId = sensorConfig["dutyCycleProfile"].as<String>();
@@ -254,10 +251,6 @@ bool loadSensorConfig() {
       Serial.println(heaterProfileId);
       Serial.print("Using Duty Cycle Profile: ");
       Serial.println(dutyCycleProfileId);
-      
-      // Apply sensor-specific configurations
-      // Example of how we might configure the sensor if methods were available:
-      // sensor.configureSensor(sensorIndex, heaterProfileId, dutyCycleProfileId);
     }
   }
 
@@ -265,8 +258,64 @@ bool loadSensorConfig() {
   return true;
 }
 
+// Function to handle updating the configuration
+void handleUpdateConfig(AsyncWebServerRequest *request, uint8_t *data, size_t len, size_t index, size_t total) {
+  // If this is the first chunk
+  if (index == 0) {
+    // Create a buffer to hold all the data
+    request->_tempObject = malloc(total);
+    if (request->_tempObject == NULL) {
+      request->send(500, "text/plain", "Not enough memory");
+      return;
+    }
+  }
+  
+  // Copy the data to the buffer
+  memcpy((uint8_t*)request->_tempObject + index, data, len);
+  
+  // If this is the last chunk
+  if (index + len == total) {
+    // Process the complete JSON
+    DynamicJsonDocument doc(4096);
+    DeserializationError error = deserializeJson(doc, (uint8_t*)request->_tempObject, total);
+    free(request->_tempObject);
+    request->_tempObject = NULL;
+    
+    if (error) {
+      request->send(400, "text/plain", "Invalid JSON");
+      return;
+    }
+    
+    // Save the JSON to the config file
+    File configFile = SPIFFS.open("/bmeconfig.json", "w");
+    if (!configFile) {
+      request->send(500, "text/plain", "Failed to open config file for writing");
+      return;
+    }
+    
+    // Write the JSON to the file
+    serializeJson(doc, configFile);
+    configFile.close();
+    
+    // Apply the new configuration
+    if (loadSensorConfig()) {
+      // Create a response JSON
+      DynamicJsonDocument responseDoc(256);
+      responseDoc["status"] = "success";
+      responseDoc["message"] = "Configuration updated and applied";
+      
+      String responseStr;
+      serializeJson(responseDoc, responseStr);
+      
+      request->send(200, "application/json", responseStr);
+    } else {
+      request->send(500, "text/plain", "Failed to apply updated configuration");
+    }
+  }
+}
+
 void setup() {
-  Serial.begin(9600);
+  Serial.begin(115200);
   
   // Initialize the sensor
   if (sensor.begin()) {
@@ -288,10 +337,82 @@ void setup() {
   } else {
     Serial.println("Failed to initialize BME688!");
   }
+
+  // Setup WiFi Access Point
+  WiFi.mode(WIFI_AP);
+  WiFi.softAP("BME688-Sensor");
+  Serial.print("AP IP address: ");
+  Serial.println(WiFi.softAPIP());
+
+  // Route for root / web page - serve a simple HTML page
+  server.on("/", HTTP_GET, [](AsyncWebServerRequest *request) {
+    String html = "<html><head><title>BME688 Sensor</title>";
+    html += "<meta name='viewport' content='width=device-width, initial-scale=1'>";
+    html += "<style>body { font-family: Arial; margin: 20px; }</style>";
+    html += "<script>";
+    html += "function updateSensorData() {";
+    html += "  fetch('/sensor').then(response => response.json())";
+    html += "  .then(data => {";
+    html += "    document.getElementById('temp').innerHTML = data.temperature;";
+    html += "    document.getElementById('humidity').innerHTML = data.humidity;";
+    html += "    document.getElementById('gas').innerHTML = data.gas_resistance;";
+    html += "  });";
+    html += "  setTimeout(updateSensorData, 3000);"; // Update every 3 seconds
+    html += "}";
+    html += "document.addEventListener('DOMContentLoaded', updateSensorData);";
+    html += "</script></head><body>";
+    html += "<h1>BME688 Sensor Dashboard</h1>";
+    html += "<p>Temperature: <span id='temp'>-</span> °C</p>";
+    html += "<p>Humidity: <span id='humidity'>-</span> %</p>";
+    html += "<p>Gas Resistance: <span id='gas'>-</span> Ω</p>";
+    html += "<p><a href='/config'>View Configuration</a></p>";
+    html += "</body></html>";
+    request->send(200, "text/html", html);
+  });
+
+  // Route to get current sensor readings as JSON
+  server.on("/sensor", HTTP_GET, [](AsyncWebServerRequest *request) {
+    AsyncResponseStream *response = request->beginResponseStream("application/json");
+    
+    // Clear and prepare JSON document
+    sensorDataDoc.clear();
+    JsonObject root = sensorDataDoc.to<JsonObject>();
+    
+    // Add sensor data to JSON
+    root["temperature"] = sensor.readTemperature();
+    root["humidity"] = sensor.readHumidity();
+    root["gas_resistance"] = sensor.readGas(0);
+    root["timestamp"] = millis();
+    
+    // Serialize JSON to response
+    serializeJson(sensorDataDoc, *response);
+    request->send(response);
+  });
+
+  // Route to get sensor configuration
+  server.on("/config", HTTP_GET, [](AsyncWebServerRequest *request) {
+    request->send(SPIFFS, "/bmeconfig.json", "application/json");
+  });
+
+  // Route to update the configuration
+  server.on("/update-config", HTTP_POST, 
+    // The first callback is called after the body is received
+    [](AsyncWebServerRequest *request) {
+      // We don't need to do anything here, the actual handling is done in the body handler
+    },
+    // The second callback is the upload handler
+    NULL,
+    // The third callback is the body handler
+    handleUpdateConfig
+  );
+
+  // Start server
+  server.begin();
+  Serial.println("HTTP server started");
 }
 
 void loop() {
-  // Read sensor data using the available methods in the BME688 library
+  // Just for debugging
   Serial.print("Gas Resistance: ");
   Serial.print(sensor.readGas(0));
   Serial.println(" Ω");
@@ -302,5 +423,5 @@ void loop() {
   Serial.print(sensor.readHumidity());
   Serial.println(" %");
   
-  delay(5000);
+  delay(3000); // Wait 3 seconds before next reading
 }
