@@ -1,4 +1,4 @@
-import ElectricPower, Capacitor, I2C, USB2_0_IF
+import ElectricPower, Capacitor, I2C, USB2_0_IF, Resistor
 from "usb-connectors/usb-connectors.ato" import USBCConn
 from "nose.ato" import Nose
 from "atopile/esp32s3/esp32s3.ato" import ESP32S3
@@ -17,11 +17,6 @@ module App:
   uc = new ESP32S3
   uc.power ~ power_3v3
   uc.usb2 ~ usbc.usb2
-  enable_button = new ButtonPullup
-  uc.power.gnd ~ enable_button.gnd
-  enable_button.btn.in ~ uc.ic.EN
-  enable_button.btn -> ButtonSKRPACE010
-
   ldo = new AMS111733
   ldo.power_in ~ power_usb
   ldo.power_out ~ power_3v3
