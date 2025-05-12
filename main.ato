@@ -5,7 +5,6 @@ from "atopile/esp32s3/esp32s3.ato" import ESP32S3
 from "atopile/usb-connectors/usb-connectors.ato" import USBCConn
 from "ams1117-33/elec/src/ams1117-33.ato" import AMS111733
 from ".ato/modules/atopile/sd-card-slots/tf-01a.ato" import TF_01A
-from "atopile/buttons/buttons.ato" import ButtonPullup, ButtonSKRPACE010
 
 module App:
   usbc = new USBCConn
