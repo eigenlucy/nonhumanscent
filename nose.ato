@@ -1,11 +1,17 @@
-import ElectricPower, Capacitor, Resistor, I2C
+import ElectricPower, ElectricLogic, Capacitor, Resistor, I2C, SPI
 from "bme688.ato" import BME688
 
 module Nose:
     mox = new BME688
     power = new ElectricPower
-    power.vcc ~ mox.VDD; power.gnd ~ mox.GND
+    power.vcc ~ mox.VDD; power.vcc ~ mox.VDDIO; power.gnd ~ mox.GND
 
+    C1 = new Capacitor; C1.value = 100nF +/- 20%; C1.package = "C0402"
+    C2 = new Capacitor; C2.value = 100nF +/- 20%; C2.package = "C0402"
+    C1.p1 ~ power.vcc; C1.p2 ~ power.gnd
+    C2.p1 ~ power.vcc; C2.p2 ~ power.gnd 
+
+module NoseI2C from Nose:
     mox.CSB ~ mox.VDDIO # select I2C interface
     i2c = new I2C
     i2c.sda ~ mox.SDI; i2c.scl ~ mox.SCK
@@ -13,7 +19,11 @@ module Nose:
     r_pullup_sda.p1 ~ mox.SDI; r_pullup_sda.p2 ~ mox.CSB
     r_pullup_scl = new Resistor; r_pullup_scl.value = 4.7kohm +/- 10%; r_pullup_scl.package = "R0402"
     r_pullup_scl.p1 ~ mox.SCK; r_pullup_scl.p2 ~ mox.CSB
-    C1 = new Capacitor; C1.value = 100nF +/- 20%; C1.package = "C0402"
-    C2 = new Capacitor; C2.value = 100nF +/- 20%; C2.package = "C0402"
-    C1.p1 ~ power.vcc; C1.p2 ~ power.gnd
-    C2.p1 ~ power.vcc; C2.p2 ~ power.gnd
+
+module NoseSPI from Nose:
+    spi = new SPI
+    spi_cs = new ElectricLogic
+    spi_cs.line ~ mox.CSB
+    spi.sclk ~ mox.SCK
+    spi.mosi ~ mox.SDI
+    spi.miso ~ mox.SDO

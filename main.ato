@@ -1,12 +1,14 @@
+#pragma experiment("FOR_LOOP")
+
 import ElectricPower, Capacitor, I2C, USB2_0_IF, Resistor
 from "usb-connectors/usb-connectors.ato" import USBCConn
-from "nose.ato" import Nose
+from "nose.ato" import NoseSPI
 from "atopile/esp32s3/esp32s3.ato" import ESP32S3
 from "atopile/usb-connectors/usb-connectors.ato" import USBCConn
 from "ams1117-33/elec/src/ams1117-33.ato" import AMS111733
 from ".ato/modules/atopile/sd-card-slots/tf-01a.ato" import TF_01A
 
-module App:
+module Nonhumanscent:
   usbc = new USBCConn
   power_usb = new ElectricPower
   power_3v3 = new ElectricPower
@@ -16,13 +18,15 @@ module App:
   uc = new ESP32S3
   uc.power ~ power_3v3
   uc.usb2 ~ usbc.usb2
+
   ldo = new AMS111733
   ldo.power_in ~ power_usb
   ldo.power_out ~ power_3v3
 
-  nose1 = new Nose
-  uc.i2c ~ nose1.i2c
-  nose1.power ~ power_3v3
+  noses = new NoseSPI[8]
+  for nose in noses:
+    nose.power ~ power_3v3
+    nose.spi ~ uc.spi2
 
   flash = new TF_01A
   flash.power ~ power_3v3

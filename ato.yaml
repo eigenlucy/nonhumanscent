@@ -7,7 +7,11 @@ paths:
 
 builds:
   default:
-    entry: main.ato:App
+    entry: main.ato:Nonhumanscent
+  Nose:
+    entry: nose.ato:Nose
+  NoseI2C:
+    entry: nose.ato:NoseI2C
     
 dependencies:
 - type: registry
