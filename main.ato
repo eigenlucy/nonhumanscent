@@ -1,10 +1,10 @@
 #pragma experiment("FOR_LOOP")
+#pragma experiment("BRIDGE_CONNECT")
 
-import ElectricPower, Capacitor, I2C, USB2_0_IF, Resistor
-from "usb-connectors/usb-connectors.ato" import USBCConn
+import ElectricPower, ElectricLogic, Capacitor, I2C, USB2_0_IF, Resistor
+from "atopile/usb-connectors/usb-connectors.ato" import USBCConn
 from "nose.ato" import NoseSPI
 from "atopile/esp32s3/esp32s3.ato" import ESP32S3
-from "atopile/usb-connectors/usb-connectors.ato" import USBCConn
 from "ams1117-33/elec/src/ams1117-33.ato" import AMS111733
 from ".ato/modules/atopile/sd-card-slots/tf-01a.ato" import TF_01A
 
@@ -18,6 +18,16 @@ module Nonhumanscent:
   uc = new ESP32S3
   uc.power ~ power_3v3
   uc.usb2 ~ usbc.usb2
+  
+  gpios = new ElectricLogic[8]
+  gpios[0].line ~ uc.io45
+  gpios[1].line ~ uc.io48
+  gpios[2].line ~ uc.io47
+  gpios[3].line ~ uc.io21
+  gpios[4].line ~ uc.io14
+  gpios[5].line ~ uc.io10
+  gpios[6].line ~ uc.io9
+  gpios[7].line ~ uc.io46
 
   ldo = new AMS111733
   ldo.power_in ~ power_usb
@@ -27,6 +37,15 @@ module Nonhumanscent:
   for nose in noses:
     nose.power ~ power_3v3
     nose.spi ~ uc.spi2
+
+  noses[0].spi_cs ~ gpios[0]
+  noses[1].spi_cs ~ gpios[1]
+  noses[2].spi_cs ~ gpios[2]
+  noses[3].spi_cs ~ gpios[3]
+  noses[4].spi_cs ~ gpios[4]
+  noses[5].spi_cs ~ gpios[5]
+  noses[6].spi_cs ~ gpios[6]
+  noses[7].spi_cs ~ gpios[7]
 
   flash = new TF_01A
   flash.power ~ power_3v3
