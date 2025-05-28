@@ -12,7 +12,7 @@ builds:
     entry: nose.ato:Nose
   NoseI2C:
     entry: nose.ato:NoseI2C
-    
+
 dependencies:
 - type: registry
   identifier: atopile/esp32s3
@@ -24,6 +24,12 @@ dependencies:
   identifier: atopile/sd-card-slots
   release: 0.1.0
 
+- type: registry
+  identifier: atopile/addressable-leds
+  release: 0.2.0
+- type: registry
+  identifier: atopile/ti-bq2404x
+  release: 0.1.0
 package:
   identifier: eigenlucy/nonhumanscent
   repository: https://github.com/eigenlucy/nonhumanscent

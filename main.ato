@@ -7,6 +7,8 @@ from "nose.ato" import NoseSPI
 from "atopile/esp32s3/esp32s3.ato" import ESP32S3
 from "ams1117-33/elec/src/ams1117-33.ato" import AMS111733
 from ".ato/modules/atopile/sd-card-slots/tf-01a.ato" import TF_01A
+from "atopile/addressable-leds/sk6805-ec20.ato" import SK6805EC20_driver
+from "atopile/buttons/buttons.ato" import ButtonSKRPACE010, ButtonPullup
 
 module Nonhumanscent:
   usbc = new USBCConn
@@ -19,7 +21,7 @@ module Nonhumanscent:
   uc.power ~ power_3v3
   uc.usb2 ~ usbc.usb2
   
-  gpios = new ElectricLogic[8]
+  gpios = new ElectricLogic[11]
   gpios[0].line ~ uc.io45
   gpios[1].line ~ uc.io48
   gpios[2].line ~ uc.io47
@@ -28,6 +30,23 @@ module Nonhumanscent:
   gpios[5].line ~ uc.io10
   gpios[6].line ~ uc.io9
   gpios[7].line ~ uc.io46
+  gpios[8].line ~ uc.io0
+  gpios[9].line ~ uc.io15
+  gpios[10].line ~ uc.io16
+
+  led = new SK6805EC20_driver
+  led.power ~ power_3v3
+  gpios[8] ~> led
+
+  user_button1 = new ButtonPullup
+  user_button1.btn -> ButtonSKRPACE010
+  user_button1.output.reference ~ power_3v3
+  user_button1.output ~ gpios[9]
+
+  user_button2 = new ButtonPullup
+  user_button2.btn -> ButtonSKRPACE010
+  user_button2.output.reference ~ power_3v3
+  user_button2.output ~ gpios[10]
 
   ldo = new AMS111733
   ldo.power_in ~ power_usb
