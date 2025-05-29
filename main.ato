@@ -9,6 +9,7 @@ from "ams1117-33/elec/src/ams1117-33.ato" import AMS111733
 from ".ato/modules/atopile/sd-card-slots/tf-01a.ato" import TF_01A
 from "atopile/addressable-leds/sk6805-ec20.ato" import SK6805EC20_driver
 from "atopile/buttons/buttons.ato" import ButtonSKRPACE010, ButtonPullup
+from "atopile/ti-bq2404x/bq2404x.ato" import BQ24040DSQR
 
 module Nonhumanscent:
   usbc = new USBCConn
