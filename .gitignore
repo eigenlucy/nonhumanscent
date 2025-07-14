@@ -95,6 +95,9 @@ venv.bak/
 .spyproject
 .ropeproject
 .aider*
+.windsurf
+.cursor
+.github
 
 # Misc
 .DS_Store

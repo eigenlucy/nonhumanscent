@@ -75,7 +75,7 @@ def main():
     print("Loading sensor data...")
     
     # Define paths to CSV files
-    csv_dir = "csv_output"
+    csv_dir = os.path.join("data", "csv_output")
     combined_csv = os.path.join(csv_dir, "combined_scents.csv")
     individual_csvs = {
         "lavender": os.path.join(csv_dir, "lavender.csv"),
