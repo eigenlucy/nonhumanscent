@@ -1,6 +1,7 @@
 #include <Arduino.h>
 #include <NimBLEDevice.h>
 #include "NuPacket.hpp"
+
 #include "NuSerial.hpp"
 #include <Adafruit_NeoPixel.h>
 #include <Wire.h>
@@ -69,19 +70,17 @@ void setup()
 
 	sen1.setHeaterProf(tempProf, mulProf, sharedHeatrDur, 10);
 	sen1.setOpMode(BME68X_PARALLEL_MODE);
+    pixels.begin(); // INITIALIZE NeoPixel strip object (REQUIRED)
+    pixels.clear();
 
-        pixels.begin(); // INITIALIZE NeoPixel strip object (REQUIRED)
-        pixels.clear();
 
-    if (!sen1.begin()) {
-	NuPacket.send("Could not find a valid BME680 sensor, check wiring!"); 
-     }
     // Set up oversampling and filter initialization
-    sen1.setTemperatureOversampling(BME680_OS_8X);
-    sen1.setHumidityOversampling(BME680_OS_2X);
-    sen1.setPressureOversampling(BME680_OS_4X);
-    sen1.setIIRFilterSize(BME680_FILTER_SIZE_3);
-    sen1.setGasHeater(320, 150); // 320*C for 150 ms
+    // sen1.setTemperatureOversampling(BME680_OS_8X);
+    // sen1.setHumidityOversampling(BME680_OS_2X);
+    // sen1.setPressureOversampling(BME680_OS_4X);
+    // sen1.setIIRFilterSize(BME680_FILTER_SIZE_3);
+    // sen1.setGasHeater(320, 150); // 320*C for 150 ms
+
     NuPacket.send("TimeStamp(ms), Temperature(deg C), Pressure(Pa), Humidity(%), Gas resistance(ohm), Status, Gas index");
 
 }
@@ -89,7 +88,7 @@ void setup()
 void loop()
 {
 	if (NuPacket.connect()) {
-	sen168xData data;
+	bme68xData data;
 	uint8_t nFieldsLeft = 0;
 
 	/* data being fetched for every 140ms */
@@ -102,13 +101,27 @@ void loop()
 			nFieldsLeft = sen1.getData(data);
 			if (data.status == NEW_GAS_MEAS)
 			{
-				NuPacket.send(std::to_string(millis()));
-				NuPacket.send(std::to_string(data.temperature));
-				NuPacket.send(std::to_string(data.pressure));
-				NuPacket.send(std::to_string(data.humidity));
-				NuPacket.send(std::to_string(data.gas_resistance));
+                // variable declarations
+                float sen1_temp = data.temperature;
+                float sen1_pressure = data.pressure;
+                float sen1_humidity = data.humidity;
+                float sen1_gas_resistance = data.gas_resistance;
+                float sen1_gas_index = data.gas_index;
+
+                const char* c_sen1_temp = std::to_string(sen1_temp).c_str();
+                const char* c_sen1_pressure = std::to_string(sen1_pressure).c_str();
+                const char* c_sen1_humidity = std::to_string(sen1_humidity).c_str();
+                const char* c_sen1_gas_resistance = std::to_string(sen1_gas_resistance).c_str();
+                const char* c_sen1_gas_index = std::to_string(sen1_gas_index).c_str();
+                
+                // NuPacket can only send const char* it seems like
+				NuPacket.send(c_sen1_temp);
+				NuPacket.send(c_sen1_pressure);
+				NuPacket.send(c_sen1_humidity);
+				NuPacket.send(c_sen1_gas_resistance);
+
 				// NuPacket.send(std::to_string(data.status, HEX) + ", ");
-				NuPacket.send(std::to_string(data.gas_index);
+				NuPacket.send(c_sen1_gas_index);
 			}
 		} while (nFieldsLeft);
 	}
